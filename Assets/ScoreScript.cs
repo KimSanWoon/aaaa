@@ -21,6 +21,8 @@ public class ScoreScript : MonoBehaviour
         {
             scoreNum++;
             this.GetComponent<TextMeshProUGUI>().text = "Score : " + scoreNum;
+            this.GetComponent<TextMeshProUGUI>().text = "Score : " + scoreNum.ToString();
+            //this.GetComponent<TextMeshProUGUI>().text = $"Score : {scoreNum}";
         }
     }
 }
